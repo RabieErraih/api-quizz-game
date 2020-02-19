@@ -13,6 +13,6 @@ class ScoreController extends Controller
     }
 
     public function getAllScores(Request $request){
-        return Score::all()->sortByDesc('created_at')->sortByDesc('score');
+        return Score::all()->sortByDesc('score')->sortByDesc('created_at');
     }
 }
