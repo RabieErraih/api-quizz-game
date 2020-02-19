@@ -39,5 +39,5 @@ Route::post('/user', 'UserController@store');
 Route::put('/user/{id}', 'UserController@update');
 Route::delete('/user/{id}', 'UserController@delete');
 
-Route::get('/score', 'ScoreController@getAllScores');
-Route::post('/score', 'ScoreController@store');
+Route::get('/user/score', 'ScoreController@getAllScores');
+Route::post('/user/score', 'ScoreController@store');
