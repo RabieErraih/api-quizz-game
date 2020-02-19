@@ -38,3 +38,6 @@ Route::get('/user/{id}', 'UserController@show');
 Route::post('/user', 'UserController@store');
 Route::put('/user/{id}', 'UserController@update');
 Route::delete('/user/{id}', 'UserController@delete');
+
+Route::get('/score', 'ScoreController@getAllScores');
+Route::post('/score', 'ScoreController@store');
